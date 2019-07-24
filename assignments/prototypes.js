@@ -36,7 +36,6 @@ function CharacterStats(CSattributes) {
   GameObject.call(this, CSattributes);
   this.healthPoints = CSattributes.healthPoints;
 };
-  //console.log(mage.takeDamage()); // Bruce took damage.
   CharacterStats.prototype = Object.create(GameObject.prototype);
   CharacterStats.prototype.takeDamage = function () {
     return `${this.name} took damage.`
